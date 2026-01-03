@@ -1,0 +1,15 @@
+
+{
+  "embedding_model": "all-MiniLM-L6-v2",
+  "llm_model": "microsoft/DialoGPT-medium",
+  "vector_store_type": "chroma",
+  "retrieval_k": 5,
+  "use_prebuilt": true,
+  "max_chat_history": 10,
+  "enable_streaming": false,
+  "show_sources": true,
+  "show_confidence": true,
+  "ui_theme": "soft",
+  "server_port": 7860,
+  "log_chats": true
+}
