@@ -1,0 +1,242 @@
+# ================================================================
+# CREDITRUST RAG COMPLAINT CHATBOT - COMPLETE REQUIREMENTS
+# ================================================================
+# This file contains ALL dependencies for Tasks 1-4 and reporting
+# ================================================================
+
+# ========================
+# CORE DATA PROCESSING
+# ========================
+
+# Data manipulation and analysis
+pandas>=2.0.0              # Data analysis and manipulation
+numpy>=1.24.0              # Numerical computing
+scipy>=1.10.0              # Scientific computing
+openpyxl>=3.1.0            # Excel file support
+xlrd>=2.0.0                # Legacy Excel support
+pyarrow>=12.0.0            # Parquet file support
+
+# ========================
+# DATA VISUALIZATION
+# ========================
+
+# Plotting libraries
+matplotlib>=3.7.0          # Basic plotting
+seaborn>=0.12.0            # Statistical visualization
+plotly>=5.14.0             # Interactive plots
+altair>=5.0.0              # Declarative visualization
+
+# ========================
+# AI/ML & NLP
+# ========================
+
+# Machine Learning
+scikit-learn>=1.3.0        # Machine learning algorithms
+
+# Deep Learning & Transformers
+torch>=2.0.0               # PyTorch (CPU version)
+transformers>=4.30.0       # Hugging Face transformers
+sentence-transformers>=2.2.0  # Sentence embeddings
+accelerate>=0.21.0         # GPU acceleration utilities
+bitsandbytes>=0.41.0       # Quantization (optional)
+
+# Natural Language Processing
+nltk>=3.8.0                # Natural Language Toolkit
+spacy>=3.5.0               # Industrial-strength NLP
+textblob>=0.17.0           # Simplified text processing
+contractions>=0.1.73       # Expand contractions
+unidecode>=1.3.0           # Unicode normalization
+
+# ========================
+# VECTOR DATABASES & RAG
+# ========================
+
+# Vector stores
+faiss-cpu>=1.7.0           # Facebook AI Similarity Search (CPU)
+chromadb>=0.4.0            # Vector database with persistence
+
+# LangChain framework
+langchain>=0.0.300         # LLM application framework
+langchain-community>=0.0.10 # Community integrations
+langchain-huggingface>=0.0.2 # Hugging Face integrations
+
+# ========================
+# WEB INTERFACES
+# ========================
+
+# UI Frameworks
+gradio>=3.44.0             # Quick web UI for ML models
+streamlit>=1.24.0          # Data app framework
+
+# API Framework
+fastapi>=0.95.0            # Modern web framework
+uvicorn>=0.21.0            # ASGI server
+httpx>=0.24.0              # Async HTTP client
+
+# ========================
+# JUPYTER & DEVELOPMENT
+# ========================
+
+# Jupyter ecosystem
+jupyter>=1.0.0             # Jupyter core
+ipykernel>=6.0.0           # IPython kernel
+notebook>=6.5.0            # Classic notebook
+jupyterlab>=4.0.0          # Next-gen notebook
+ipywidgets>=8.0.0          # Interactive widgets
+
+# Development tools
+black>=23.3.0              # Code formatter
+flake8>=6.0.0              # Linter
+mypy>=1.3.0                # Static type checking
+isort>=5.12.0              #import sorting
+pre-commit>=3.3.0          # Git hooks
+
+# ========================
+# TESTING
+# ========================
+
+# Testing framework
+pytest>=7.3.0              # Testing framework
+pytest-cov>=4.0.0          # Coverage reporting
+pytest-mock>=3.10.0        # Mocking utilities
+pytest-asyncio>=0.21.0     # Async testing
+pytest-benchmark>=4.0.0    # Performance testing
+
+# Test utilities
+faker>=18.0.0              # Fake data generation
+factory-boy>=3.2.0         # Test fixtures
+
+# ========================
+# DOCUMENTATION & REPORTING
+# ========================
+
+# Documentation
+sphinx>=7.0.0              # Documentation generator
+pdoc>=13.0.0               # API documentation
+mkdocs>=1.4.0              # Static site generator
+mkdocs-material>=9.1.0     # Material theme
+
+# Report generation
+python-docx>=0.8.11        # Word document generation
+reportlab>=4.0.0           # PDF generation (optional)
+fpdf>=1.7.2                # Simple PDF generation (optional)
+
+# ========================
+# UTILITIES
+# ========================
+
+# Progress bars
+tqdm>=4.65.0               # Progress bars
+
+# Environment management
+python-dotenv>=1.0.0       # Environment variables
+
+# Terminal utilities
+colorama>=0.4.6            # Cross-platform colored terminal
+rich>=13.5.0               # Rich text and formatting
+
+# Type hints
+pydantic>=2.0.0            # Data validation
+typing-extensions>=4.5.0   # Backported type hints
+
+# HTTP requests
+requests>=2.28.0           # HTTP library
+
+# Data validation
+validators>=0.20.0         # Data validation
+
+# ========================
+# EVALUATION METRICS
+# ========================
+
+# Evaluation libraries
+evaluate>=0.4.0            # Hugging Face evaluation
+rouge-score>=0.1.2         # ROUGE metrics
+bert-score>=0.3.13         # BERT-based evaluation
+
+# Datasets
+datasets>=2.12.0           # Hugging Face datasets
+
+# ========================
+# PERFORMANCE MONITORING
+# ========================
+
+# Debugging
+ipdb>=0.13.0               # Interactive debugger
+
+# Profiling
+memory-profiler>=0.60.0    # Memory usage profiling
+line-profiler>=4.0.0       # Line-by-line profiling
+
+# Load testing
+locust>=2.15.0             # Load testing framework
+
+# ========================
+# CONTAINERIZATION
+# ========================
+
+# Docker
+docker>=6.0.0              # Docker SDK
+# docker-compose>=2.20.0     # Docker Compose
+
+# ========================
+# OPTIONAL GPU SUPPORT
+# ========================
+# Uncomment for GPU acceleration (requires CUDA)
+
+# For PyTorch with CUDA 11.8:
+# torch>=2.0.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+
+# For PyTorch with CUDA 12.1:
+# torch>=2.0.0+cu121 --index-url https://download.pytorch.org/whl/cu121
+
+# GPU-enabled FAISS:
+# faiss-gpu>=1.7.0
+
+# ========================
+# OPTIONAL ADDITIONAL NLP
+# ========================
+
+# Uncomment for advanced NLP features:
+# gensim>=4.3.0             # Topic modeling and word embeddings
+# sumy>=0.11.0              # Text summarization
+# keybert>=0.7.0            # Keyword extraction
+# wordcloud>=1.9.0          # Word cloud generation
+
+# ========================
+# OPTIONAL API INTEGRATIONS
+# ========================
+
+# Uncomment for additional API support:
+# openai>=0.27.0            # OpenAI API client
+# anthropic>=0.3.0          # Anthropic Claude API
+# cohere>=4.0.0             # Cohere API
+
+# ========================
+# VERSION SPECIFIC NOTES
+# ========================
+
+# Python version: Requires Python 3.8 or higher
+# For Windows users: Some packages may require C++ build tools
+# For Mac M1/M2: Use conda or pyenv for better compatibility
+# For Linux: Most packages work natively
+
+# ========================
+# INSTALLATION COMMANDS
+# ========================
+
+# Basic installation:
+# pip install -r requirements.txt
+
+# Installation with optional dependencies:
+# pip install -r requirements.txt --upgrade
+
+# For development (includes all extras):
+# pip install -r requirements.txt -e .[dev]
+
+# Minimal installation (core only):
+# pip install pandas numpy matplotlib sentence-transformers chromadb gradio
+
+# ================================================================
+# END OF REQUIREMENTS
+# ================================================================
