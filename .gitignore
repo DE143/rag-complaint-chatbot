@@ -1,0 +1,94 @@
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+develop-eggs/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+
+# ===============================
+# Jupyter Notebook
+# ===============================
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# ===============================
+# Data files (IMPORTANT for ML projects)
+# ===============================
+data/raw/
+data/processed/
+data/interim/
+data/external/
+
+# Keep directory structure
+!data/**/.gitkeep
+
+# ===============================
+# Models & embeddings
+# ===============================
+models/
+embeddings/
+vectorstore/
+*.faiss
+*.pkl
+*.joblib
+
+# ===============================
+# Logs & reports
+# ===============================
+logs/
+*.log
+reports/
+notebooks/figures/
+
+# ===============================
+# OS / Editor files
+# ===============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+
+# ===============================
+# Environment & secrets
+# ===============================
+.env
+.env.*
+*.key
+*.pem
+secrets/
+
+# ===============================
+# Test & cache
+# ===============================
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ===============================
+# Temporary files
+# ===============================
+*.tmp
+*.temp
+*.swp
+*.bak
