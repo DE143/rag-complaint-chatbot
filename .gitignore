@@ -52,7 +52,6 @@ vectorstore/
 # ===============================
 logs/
 *.log
-reports/
 notebooks/figures/
 
 # ===============================
